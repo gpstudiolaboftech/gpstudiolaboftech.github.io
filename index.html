@@ -1,27 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en" dir="itr">
-<head>
-<style>*{
+<style>@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
 	margin:0;
 	padding:0;
 	text-decoration:none;
 	list-style:none;
 	box-sizing:border-box;
+	
 	background-color: black;
 	font-family:Sans-serif ;
  }
  
-body 
-{ 
-  background-image: url(https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    
-  height: 1000px; /* You must set a specified height */
-   
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: ; 
-  
-}
 nav
 {
 	background:black;
@@ -33,8 +22,8 @@ nav
 	 color: white;
 	 font-size: 35px;
 	 line-height:80px;
-	 padding: 0 100px;
-	 font-weight:bold;
+	 padding: 0 140px;
+	 font-weight: 600;
  }
  
  nav ul
@@ -48,7 +37,6 @@ nav
 	 display: inline-block;
 	 line-height: 80px;
 	 margin: 0 2px
-  /* text-transform: uppercase; */
  }
 nav ul li a{
   color: #f2f2f2;
@@ -72,13 +60,77 @@ a.active,a:hover
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
+  display: none;
+  }
+ #check
+ {
+	 display:none;
+ } 
+ 
+ @media (max-width:952px)
+ {
+	 label.logo
+	 {
+		 font-size:27px;
+		 padding-left:25px;
+	 }
+	 nav ul a
+	 {
+		 font-size: 16px;
+	 } 
+	 
+ }
+ @media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #00000;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
   }
 
+}
+ 
+body
+{ 
+  background-image: url(https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    
+  height: 1000px; /* You must set a specified height */
+   
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: auto ; 
+  
+}
 </style>
+<html lang="en" dir="itr">
+<head>
 	<meta charset="utf-8">
 	<title>Gp Studio</title>
 	<meta name="viewport" content="width=device-widhth, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body bgcolor="white">
@@ -98,7 +150,7 @@ a.active,a:hover
 		<li><a href="#">Contact us</a></li>
 	</ul>
 	</nav>
-	
+	<section></section>
 	
 </body>
 </html>
