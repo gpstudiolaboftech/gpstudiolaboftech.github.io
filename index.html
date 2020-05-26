@@ -1,7 +1,8 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="en" dir="itr">
 <head>
-	<style>@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
 	margin:0;
 	padding:0;
@@ -13,35 +14,44 @@
 	font-family:Sans-serif ;
  }
  
-nav
-{
+.header{
 	background:black;
 	height:80px;
 	width:100%;
+	
 }
- label.logo
- {
+
+label.logo{
 	 
 	 color: white;
 	 font-size: 35px;
 	 line-height:80px;
 	 padding: 0 140px;
 	 font-weight: 600;
+	 
  }
- 
- nav ul
- {
+label{}
+ul{}
+img {
+	width: 65px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.header ul{
 	 float: right;
      margin-right: 60px;
 	
  }
- nav ul li 
- {
+
+.header ul li {
 	 display: inline-block;
 	 line-height: 80px;
 	 margin: 0 2px
  }
-nav ul li a{
+
+.header ul li a{
   color: #f2f2f2;
   font-weight: 500;
   font-size: 20px;
@@ -51,12 +61,13 @@ nav ul li a{
   font-family: 'Poppins', sans-serif;
 }
 
-a.active,a:hover
-{
+.header ul a.active,.header ul a:hover{
   background: #8B4513;
   transition: .5s;
 }
+
 .checkbtn{
+
   font-size: 30px;
   color: white;
   float: right;
@@ -65,19 +76,18 @@ a.active,a:hover
   cursor: pointer;
   display: none;
   }
- #check
- {
+
+#check{
 	 display:none;
  } 
  
- @media (max-width:952px)
- {
+ @media (max-width:952px){
 	 label.logo
 	 {
 		 font-size:27px;
 		 padding-left:30px;
 	 }
-	 nav ul a
+	 .header ul a
 	 {
 		 font-size: 16px;
 	 } 
@@ -86,32 +96,37 @@ a.active,a:hover
  @media (max-width: 858px){
   .checkbtn{
     display: block;
-    margin-right: 40px;
+    margin-right: 40px;	
+	
   }
-  ul{
-    position: fixed;
+  /*.header{position: fixed;}*/
+  .header ul{
+    position: absolute;
     width: 100%;
     height: 100vh;
     background: #00000;
+	opacity:0.9;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+  .header ul li{
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a{
+  .header ul li a{
     font-size: 20px;
+	
   }
-  a:hover,a.active{
+ .header ul a:hover,.header ul a.active{
     background: none;
     color: #8B4513;
   }
   #check:checked ~ ul{
     left: 0;
+	
   }
 
 }
@@ -134,22 +149,64 @@ body
   padding: 100px;
   width: 50px;
 }*/
-img {
-	width: 65px;
-    position: absolute;
-    top: 7px;
-    left: 7px;
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  
+  bottom: 20px;
+  right: 30px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #8B4513;
+  font-size: 30px;
 }
-</style>
+section{ 
+	
+	color:white;
+	background-color: black;
+	background-image: url(https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    text-align: center;
+	font-family:Sans-serif ;
+  height: 1000px; /* You must set a specified height */
+   
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: auto ; 
+  
+}
+	</style>
 	
 	<meta charset="utf-8">
 	<title>Gp Studio</title>
 	<meta name="viewport" content="width=device-widhth, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body bgcolor="white">
-	<nav>
+	
+	
+	<script type="text/javascript">
+(function(w,d){
+  function r(){
+        var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://chatflow.io/static/1.2/chatflow.php';(d.body||d.head).appendChild(s);
+        s.onload = function () {
+                var options = {"channels":{"email":"gpstudios001@gmail.com"},"agentname":"Guru Prasadh J","color":"#824FFD","position":"left","ctaText":"Have any questions?","headerText":"Start Conversation"}
+                cffunc = new chatflow();
+                cffunc.loadcf('init', options);
+        };
+  }
+  if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
+})(window, document);
+</script>
+	
+	
+	
+	
+	<div class= "header">
 	<input type="checkbox" id="check">
 	<label for="check" class="checkbtn">
 	 <i class="fas fa-bars" ></i>	
@@ -157,18 +214,33 @@ img {
 	<img src="https://yt3.ggpht.com/a-/AOh14GjiAYaIndDMd5HS4dzzGW9oc1b1PDskF4BOxTbFnw=s100-c-k-c0xffffffff-no-rj-mo" alt="logo">
 	<label class="logo" >
 	
-
 		Gp Studio
 	</label>
 	<ul>
-		<li><a class="active" href="#">Home</a></li>
-		<li><a href="#">Sive</a></li>
-		<li><a href="#">Pencil PAD</a></li>
-		<li><a href="#">About Us</a></li>
-		<li><a href="#">Contact us</a></li>
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#sive">Sive</a></li>
+		<li><a href="#pencilpad">Pencil PAD</a></li>
+		<li><a href="#aboutus">About Us</a></li>
+		<li><a href="#contactus">Contact us</a></li>
 	</ul>
-	</nav>
-	<section></section>
-	
+	</div>
+	<div class="smooth">
+		<section id="home">
+			<h2>Section Home</h2>
+		</section>
+		<section id="sive">
+			<h2>Section Sive</h2>
+		</section>
+		<section id="pencilpad">
+			<h2>Section Pencil PAD</h2>
+		</section>
+		<section id="aboutus">
+			<h2>Section About Us</h2>
+		</section>
+		<section id="contactus">
+			<h2>Section Contact us</h2>
+		</section>
+	</div>
+	 <a class="gotopbtn" href="#"> <i class="fas fa-chevron-circle-up"></i> </a>
 </body>
 </html>
