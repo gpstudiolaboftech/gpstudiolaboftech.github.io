@@ -1,6 +1,7 @@
  <!DOCTYPE HTML>
 <html lang="en" dir="itr">
 <head>
+	
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
@@ -151,16 +152,30 @@ body
 }*/
 .gotopbtn{
   position: fixed;
-  width: 50px;
-  height: 50px;
-  
+  width: 30px;
+  height: 30px;
+  /*opacity: 0.5;*/
   bottom: 20px;
   right: 30px;
 
   text-decoration: none;
   text-align: center;
-  line-height: 50px;
+  line-height: 30px;
   color: #8B4513;
+  font-size: 30px;
+}
+.whatsapp{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  /*opacity: 0.5;*/
+  bottom: 20px;
+  left: 30px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  color: green;
   font-size: 30px;
 }
 section{ 
@@ -189,7 +204,7 @@ section{
 <body bgcolor="white">
 	
 	
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
 (function(w,d){
   function r(){
         var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://chatflow.io/static/1.2/chatflow.php';(d.body||d.head).appendChild(s);
@@ -201,8 +216,26 @@ section{
   }
   if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
 })(window, document);
-</script>
-	
+</script>-->
+	<!--<script type="text/javascript">
+(function(w,d){
+  function r(){
+        var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://chatflow.io/static/1.2/chatflow.php';(d.body||d.head).appendChild(s);
+        s.onload = function () {
+                var options = {"channels":{"whatsapp":"7598118126"},"agentname":"Guru Prasadh J","color":"#A3CB38","position":"left","ctaText":"Have any questions?","headerText":"Start Conversation"}
+
+
+                cffunc = new chatflow();
+                cffunc.loadcf('init', options);
+        };
+  }
+  if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
+})(window, document);
+</script>-->
+
+
+
+
 	
 	
 	
@@ -242,5 +275,6 @@ section{
 		</section>
 	</div>
 	 <a class="gotopbtn" href="#"> <i class="fas fa-chevron-circle-up"></i> </a>
+	 <a class="whatsapp" href="https://api.whatsapp.com/send?phone=7598118126&text="> <i class="fab fa-whatsapp"></i></a>
 </body>
 </html>
