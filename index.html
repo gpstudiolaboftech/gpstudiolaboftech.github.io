@@ -1,7 +1,6 @@
  <!DOCTYPE HTML>
 <html lang="en" dir="itr">
 <head>
-	
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
@@ -11,12 +10,14 @@
 	list-style:none;
 	box-sizing:border-box;
 	
-	background-color: black;
+	
 	font-family:Sans-serif ;
  }
  
+
+ 
 .header{
-	background:black;
+	
 	height:80px;
 	width:100%;
 	
@@ -31,8 +32,7 @@ label.logo{
 	 font-weight: 600;
 	 
  }
-label{}
-ul{}
+
 img {
 	width: 65px;
     position: absolute;
@@ -82,19 +82,103 @@ img {
 	 display:none;
  } 
  
- @media (max-width:952px){
-	 label.logo
-	 {
-		 font-size:27px;
-		 padding-left:30px;
-	 }
-	 .header ul a
-	 {
-		 font-size: 16px;
-	 } 
-	 
- }
- @media (max-width: 858px){
+ 
+ 
+
+
+
+#home{
+	background-image: url(https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+	background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#sive{
+	background-image:radial-gradient(transparent, black),url(https://images.unsplash.com/photo-1511287381215-8c58b84f8896?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+	background-position: center; 
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#pencilpad{
+	background-image:radial-gradient(transparent, black),url(https://images.unsplash.com/photo-1560317620-1ba88ae56e7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80);
+	background-position: center; 
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+#aboutus{
+	background-image:radial-gradient(transparent, black),url(https://images.unsplash.com/photo-1542317854-f9596ae570f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+	background-position: center; 
+    background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+#smooth {
+	width:100%;
+	height:100vh;
+}
+#smooth div{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.text-content{
+	color:white;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:100%;
+	text-align:center;
+	padding:0 150px;
+}
+.text-content h2{
+	font-size:90px;
+	text-align: center;
+    transition: all .5s;
+}
+.text-content p{
+	line-height:35px;
+	
+}
+
+.gotopbtn{
+  position: fixed;
+  
+  bottom: 20px;
+  right: 30px;
+
+  background-color: black;
+ border-radius: 100%;
+ border: 1x solid grey;
+ padding:5px;
+
+  text-decoration: none;
+  line-height: 30px;
+  color: #8B4513 ;
+  font-size: 30px;
+}
+.whatsapp{
+	position: fixed;
+  
+	bottom: 20px;
+	left: 30px;
+  
+	background-color: black;
+	border-radius: 100%;
+	border: 1x solid grey;
+	padding:5px;
+
+	text-decoration: none;
+	line-height: 30px;
+	color: green;
+	font-size: 30px;
+  
+} 
+
+
+@media (max-width: 858px){
   .checkbtn{
     display: block;
     margin-right: 40px;	
@@ -129,75 +213,35 @@ img {
     left: 0;
 	
   }
-
-}
- 
-body
-{ 
-  background-image: url(https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    
-  height: 1000px; /* You must set a specified height */
-   
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: auto ; 
-  
-}
-/*img 
-{
-  border: 0px;
-  border-radius: 0px;
-  padding: 100px;
-  width: 50px;
-}*/
-.gotopbtn{
-  position: fixed;
-  
-  bottom: 20px;
-  right: 30px;
-
-  background-color: black;
- border-radius: 100%;
- border: 1x solid grey;
- padding:5px;
-
-  text-decoration: none;
-  line-height: 30px;
-  color: #8B4513 ;
-  font-size: 30px;
-}
-.whatsapp{
-	position: fixed;
-  
-	bottom: 20px;
-	left: 30px;
-  
-	background-color: black;
-	border-radius: 100%;
-	border: 1x solid grey;
-	padding:5px;
-
-	text-decoration: none;
-	line-height: 30px;
-	color: green;
-	font-size: 30px;
-  
-}
-
-section{ 
+ .text-content h2{
+	font-size:50px;
+	top:50%;
+	left:50%;
+	text-align: left;
+	transform:translate(-70%,-30%);
 	
-	color:white;
-	background-color: black;
-	background-image: url(https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    text-align: center;
-	font-family:Sans-serif ;
-  height: 1000px; /* You must set a specified height */
-   
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: auto ; 
-  
+} .text-content p{
+	top:50%;
+	left:50%;
+	text-align: left;
+	transform:translate(-70%,-5%);
+	
 }
+
+}
+@media (max-width:952px){
+	 label.logo
+	 {
+		 font-size:27px;
+		 padding-left:30px;
+	 }
+	 .header ul a
+	 {
+		 font-size: 16px;
+	 } 
+	 
+ }
+ 
 	</style>
 	
 	<meta charset="utf-8">
@@ -250,40 +294,65 @@ section{
 	
 	<div class= "header">
 	<input type="checkbox" id="check">
-	<label for="check" class="checkbtn">
+	  <label for="check" class="checkbtn">
 	 <i class="fas fa-bars" ></i>	
-	</label>
-	<img src="https://yt3.ggpht.com/a-/AOh14GjiAYaIndDMd5HS4dzzGW9oc1b1PDskF4BOxTbFnw=s100-c-k-c0xffffffff-no-rj-mo" alt="logo">
-	<label class="logo" >
+	 </label>
+	 <img src="https://yt3.ggpht.com/a-/AOh14GjiAYaIndDMd5HS4dzzGW9oc1b1PDskF4BOxTbFnw=s100-c-k-c0xffffffff-no-rj-mo" alt="logo">
+	 <label class="logo" >
 	
 		Gp Studio
-	</label>
-	<ul>
+	 </label>
+	 <ul>
 		<li><a class="active" href="#home">Home</a></li>
 		<li><a href="#sive">Sive</a></li>
 		<li><a href="#pencilpad">Pencil PAD</a></li>
 		<li><a href="#aboutus">About Us</a></li>
 		<li><a href="#contactus">Contact us</a></li>
-	</ul>
+	 </ul>
 	</div>
-	<div class="smooth">
-		<section id="home">
-			<h2>Section Home</h2>
-		</section>
-		<section id="sive">
-			<h2>Section Sive</h2>
-		</section>
-		<section id="pencilpad">
-			<h2>Section Pencil PAD</h2>
-		</section>
-		<section id="aboutus">
-			<h2>Section About Us</h2>
-		</section>
-		<section id="contactus">
-			<h2>Section Contact us</h2>
-		</section>
-	</div>
+	<div id="smooth">
+	    <div id="home">
+		 <section class="text-content" >
+		
+			<h2>Hello Cookies!!!</h2>
+			<p>Welcome to Our Website</p>
+		 </section>
+		</div>
+		<div id="sive">
+		 <section class="text-content">
+		
+			<h2>S.I.V.E</h2>
+			<p>SIVE is a Encrypted Virtual Environment, intergrated with Virtual Assitance.It make a virtual Evironment in your computer and and Encrypt the data kept inside it.You can encrypt Source Code,Images, Audio, Video And also Other file also. Everyone has their unique password and unique UI as for the taste.  <p>
+				
+		 </section>
+		</div>
+		
+		<div id="pencilpad">
+		 <section class="text-content" >
+		
+			<h2>Pencil PAD</h2>
+			<p>Pencil pad is a notepad developed in qt c++. A Minimal notepad with salient feature in it.It is developing stage.<p>
+			<h1>Coming Soon....</h1>
+				
+		 </section>
+		</div>
+		<div id="aboutus">
+		 <section class="text-content">
+		 
+		
+			<h2>About Us</h2>
+			<p>F
+             <p>
+		 </section>
+		</div>
+		<div id="contactus">
+		 <section class="text-content">
+			
+			<h2>Contact us</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		 </section>
+	    </div>
 	 <a class="gotopbtn" href="#"> <i class="fas fa-chevron-circle-up"></i> </a>
-	 <a class="whatsapp" href="https://api.whatsapp.com/send?phone=917598118126&text="> <i class="fab fa-whatsapp"></i></a>
+	 <a class="whatsapp" href="https://api.whatsapp.com/send?phone=7598118126&text="> <i class="fab fa-whatsapp"></i></a>
 </body>
 </html>
