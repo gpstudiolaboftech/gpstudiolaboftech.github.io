@@ -1,194 +1,357 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en" dir="itr">
 <head>
-	<style> 
-	*{
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+margin:0;
+padding:0;
+text-decoration:none;
+list-style:none;
+box-sizing:border-box;
+font-family:Sans-serif ;
 
-  text-decoration: none;
 }
 
-background-color: black ;
 .header{
 
-	height:80px;
-	width:100%;
+height:80px;
+width:100%;
 
 }
-.header ul{
-  float: right;
-  margin-right: 60px;
 
- }
+label.logo{
+
+ color: white;
+ font-size: 35px;
+ line-height:80px;
+ padding: 0 140px;
+ font-weight: 600;
+
+}
+
+img {
+	width: 65px;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+}
+
+.header ul{
+ float: right;
+	 margin-right: 60px;
+
+}
 
 .header ul li {
-	 display: inline-block;
-	 line-height: 80px;
-	 margin: 0 2px
- }
+ display: inline-block;
+ line-height: 80px;
+ margin: 0 2px
+}
 
 .header ul li a{
-  color: #f2f2f2;
-  font-weight: 500;
-  font-size: 20px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  /* text-transform: uppercase; */
-  font-family: 'Poppins', sans-serif;
+color: #f2f2f2;
+font-weight: 500;
+font-size: 20px;
+padding: 7px 13px;
+border-radius: 3px;
+/* text-transform: uppercase; */
+font-family: 'Poppins', sans-serif;
 }
 
 .header ul a.active,.header ul a:hover{
-  background: #8B4513;
-  transition: .5s;
+background: #8B4513;
+transition: .5s;
 }
 
 .checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
 
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-  }
 #check{
-  	 display:none;
-   }
-@media (max-width: 858px){
-     .checkbtn{
-       display: block;
-       margin-right: 40px;
-
-     }
-     /*.header{position: fixed;}*/
-     .header ul{
-       position: absolute;
-       width: 100%;
-       height: 100vh;
-       background: #00000;
-   	   opacity:0.9;
-       top: 80px;
-       left: -100%;
-       text-align: center;
-       transition: all .5s;
-     }
-     .header ul li{
-       display: block;
-       margin: 50px 0;
-       line-height: 30px;
-    }
-     .header ul li a{
-       font-size: 20px;
-
-    }
-    .header ul a:hover,.header ul a.active{
-       background: none;
-       color: #8B4513;
-     }
-     #check:checked ~ ul{
-       left: 0;
-
-    }
+ display:none;
+}
 
 
-   }
+
+
+
+
+#home{
+background-image: url(https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+background-position: center;
+	background-repeat: no-repeat;
+}
+
+#sive{
+background-image:radial-gradient(transparent, black),url(https://images.unsplash.com/photo-1511287381215-8c58b84f8896?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+background-position: center;
+	background-repeat: no-repeat;
+background-size: cover;
+}
+
+#pencilpad{
+background-image:radial-gradient(transparent, black),url(https://images.unsplash.com/photo-1560317620-1ba88ae56e7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80);
+background-position: center;
+	background-repeat: no-repeat;
+background-size: cover;
+}
+#aboutus{
+background-image:radial-gradient(transparent, black),url(https://images.unsplash.com/photo-1542317854-f9596ae570f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+background-position: center;
+	background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+#smooth {
+width:100%;
+height:100vh;
+}
+#smooth div{
+position:relative;
+width:100%;
+height:100%;
+}
+.text-content{
+color:white;
+position:relative;
+top:50%;
+left:50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+width:100%;
+text-align:center;
+padding:0 150px;
+}
+.text-content h2{
+font-size:90px;
+text-align: center;
+	transition: all .5s;
+}
+.text-content p{
+line-height:35px;
+
+}
 
 .gotopbtn{
-	position: fixed;
+position: fixed;
 
-	bottom: 20px;
-	right: 30px;
+bottom: 20px;
+right: 30px;
 
-	background-color: black;
-	border-radius: 100%;
-	border: 1x solid grey;
-	padding:5px;
+background-color: black;
+border-radius: 100%;
+border: 1x solid grey;
+padding:5px;
 
-	text-decoration: none;
-	line-height: 30px;
-	color: #8B4513 ;
-	font-size: 30px;
+text-decoration: none;
+line-height: 30px;
+color: #8B4513 ;
+font-size: 30px;
 }
-
 .whatsapp{
-	position: fixed;
+position: fixed;
 
-	bottom: 20px;
-	left: 30px;
+bottom: 20px;
+left: 30px;
 
-	background-color: black;
-	border-radius: 100%;
-	border: 1x solid grey;
-	padding:5px;
+background-color: black;
+border-radius: 100%;
+border: 1x solid grey;
+padding:5px;
 
-	text-decoration: none;
+text-decoration: none;
+line-height: 30px;
+color: green;
+font-size: 30px;
+
+}
+
+
+@media (max-width: 858px){
+.checkbtn{
+	display: block;
+	margin-right: 40px;
+
+}
+/*.header{position: fixed;}*/
+.header ul{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #00000;
+opacity:0.9;
+	top: 80px;
+	left: -100%;
+	text-align: center;
+	transition: all .5s;
+}
+.header ul li{
+	display: block;
+	margin: 50px 0;
 	line-height: 30px;
-	color: #25D366;
-	font-size: 30px;
+}
+.header ul li a{
+	font-size: 20px;
 
 }
-section{
-   display: block;
-  position:absolute;
-  color:white;
-	width:100%;
-	height:100vh;
-  align-items:center;
-  text-align: center;
+.header ul a:hover,.header ul a.active{
+	background: none;
+	color: #8B4513;
+}
+#check:checked ~ ul{
+	left: 0;
 
 }
-section h2 {
+.text-content h2{
+font-size:50px;
+
+text-align: left;
+
+
+} .text-content p{
+
+text-align: justify;
+
 
 }
 
-	</style>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+}
+@media (max-width:952px){
+ label.logo
+ {
+	 font-size:27px;
+	 padding-left:30px;
+ }
+ .header ul a
+ {
+	 font-size: 16px;
+ }
+
+}
+
+</style>
+
+	<meta charset="utf-8">
+	<title>Gp Studio</title>
+	<link rel = "icon" href =
+"https://yt3.ggpht.com/a-/AOh14GjiAYaIndDMd5HS4dzzGW9oc1b1PDskF4BOxTbFnw=s100-c-k-c0xffffffff-no-rj-mo"
+        type = "image/x-icon">
+	<meta name="viewport" content="width=device-widhth, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Gp Studio - Lab Of Tech</title>
-	<link rel = "icon" href ="https://yt3.ggpht.com/a-/AOh14GjiAYaIndDMd5HS4dzzGW9oc1b1PDskF4BOxTbFnw=s100-c-k-c0xffffffff-no-rj-mo" type = "image/x-icon">
-	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
 </head>
+<body bgcolor="black">
+
+
+	<!--<script type="text/javascript">
+(function(w,d){
+  function r(){
+        var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://chatflow.io/static/1.2/chatflow.php';(d.body||d.head).appendChild(s);
+        s.onload = function () {
+                var options = {"channels":{"email":"gpstudios001@gmail.com"},"agentname":"Guru Prasadh J","color":"#824FFD","position":"left","ctaText":"Have any questions?","headerText":"Start Conversation"}
+                cffunc = new chatflow();
+                cffunc.loadcf('init', options);
+        };
+  }
+  if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
+})(window, document);
+</script>-->
+	<!--<script type="text/javascript">
+(function(w,d){
+  function r(){
+        var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://chatflow.io/static/1.2/chatflow.php';(d.body||d.head).appendChild(s);
+        s.onload = function () {
+                var options = {"channels":{"whatsapp":"7598118126"},"agentname":"Guru Prasadh J","color":"#A3CB38","position":"left","ctaText":"Have any questions?","headerText":"Start Conversation"}
+                cffunc = new chatflow();
+                cffunc.loadcf('init', options);
+        };
+  }
+  if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
+})(window, document);
+</script>-->
 
 
 
-<body bgcolor="black" >
 
-	<a class="gotopbtn" href="#"> <i class="fas fa-chevron-circle-up"></i> </a>
-	<a class="whatsapp" href="https://api.whatsapp.com/send?phone=7598118126&text="> <i class="fab fa-whatsapp"></i></a>
+
+
+
 	<div class= "header">
-		<input type="checkbox" id="check">
-  	<label for="check" class="checkbtn">
-			<i class="fas fa-bars" ></i>
-		</label>
-	 	<ul>
-			<li><a class="active" href="#home">Home</a></li>
-			<li><a href="#sive">Sive</a></li>
-			<li><a href="#pencilpad">Pencil PAD</a></li>
-			<li><a href="#aboutus">About Us</a></li>
-			<li><a href="#contactus">Contact us</a></li>
-	 	</ul>
+	<input type="checkbox" id="check">
+	  <label for="check" class="checkbtn">
+	 <i class="fas fa-bars" ></i>
+	 </label>
+	 <img src="https://yt3.ggpht.com/a-/AOh14GjiAYaIndDMd5HS4dzzGW9oc1b1PDskF4BOxTbFnw=s100-c-k-c0xffffffff-no-rj-mo" alt="logo">
+	 <label class="logo" >
+
+		Gp Studio
+	 </label>
+	 <ul>
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#sive">Sive</a></li>
+		<li><a href="#pencilpad">Pencil PAD</a></li>
+		<li><a href="#aboutus">About Us</a></li>
+		<li><a href="#contactus">Contact us</a></li>
+	 </ul>
 	</div>
+	<div id="smooth">
+	    <div id="home">
+		 <section class="text-content" >
+
+			<h2>Hello Cookies!!!</h2>
+			<p>Welcome to Our Website</p>
+		 </section>
+		</div>
+		<div id="sive">
+		 <section class="text-content">
+
+			<h2>S.I.V.E</h2>
+			<p>SIVE is a Encrypted Virtual Environment, intergrated with Virtual Assitance.It make a virtual Evironment in your computer and and Encrypt the data kept inside it.You can encrypt Source Code,Images, Audio, Video And also Other file also. Everyone has their unique password and unique UI as for the taste.  <p>
+
+		 </section>
+		</div>
+
+		<div id="pencilpad">
+		 <section class="text-content" >
+
+			<h2>Pencil PAD</h2>
+			<p>Pencil pad is a notepad developed in qt c++. A Minimal notepad with salient feature in it.It is developing stage.<p>
+			<h1>Coming Soon....</h1>
+
+		 </section>
+		</div>
+		<div id="aboutus">
+		 <section class="text-content">
 
 
-		<section>
-			<div id="#home"><h1>Hello Cookies!!!</h1><p>Welcome to Our Website</p></div>
-			<div id="#sive">	</div>
-			<div id="#pencilpad">	</div>
-			<div id="#aboutus">	</div>
-			<div id="#contactus">	</div>
+			<h2>About Us</h2>
+			<p>It is an Idea About A Technological company which makes security based projects and software ,To keeping users Safe and maintain privacy to their personal Life
+			</p><h1>Our Idea and Tagline are </h1><h1>🔏SAFE.</h1>
+							  <h1>👨‍💻SECURE.</h1>
+								 <h1>😊HAPPY.<h1>
+									 <h3>Founder:<h3><p>Guru Prasadh J</p>
+		 </section>
+		</div>
+		<div id="contactus">
+		 <section class="text-content">
 
-
-
-
-
-			</div>
-		</setion>
-
-
-
-
-
-
+			<h2>Contact us</h2>
+			<p>Email: gpstudios001@gmail.com</p><p>Instagram: gpstudio_photography</p>
+		 </section>
+	    </div>
+	 <a class="gotopbtn" href="#"> <i class="fas fa-chevron-circle-up"></i> </a>
+	 <a class="whatsapp" href="https://api.whatsapp.com/send?phone=7598118126&text="> <i class="fab fa-whatsapp"></i></a>
 </body>
 </html>
